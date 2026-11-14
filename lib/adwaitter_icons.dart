@@ -7,7 +7,7 @@ import 'package:flutter/widgets.dart';
 /// Official GNOME Adwaita symbolic icon suite for Flutter.
 abstract final class AdwIcons {
   static const String _fontFamily = 'AdwaitaIcons';
-  static const String _fontPackage = 'libadwaitter_icons';
+  static const String _fontPackage = 'adwaitter_icons';
 
   /// Symbolic icon `ac_adapter_symbolic`.
   static const IconData ac_adapter_symbolic = IconData(0xf385, fontFamily: _fontFamily, fontPackage: _fontPackage);

@@ -1,5 +1,5 @@
 name: adwaitter_icons
-description: Official GNOME Adwaita symbolic icon theme packaged as standard Flutter IconData.
+description: Official GNOME Adwaita symbolic and full-color icon theme for Flutter.
 version: 1.0.0-alpha.8
 homepage: https://github.com/CarrsterX/Adwaitter_Icons
 repository: https://github.com/CarrsterX/Adwaitter_Icons
@@ -14,6 +14,11 @@ dependencies:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/fullcolor/devices/
+    - assets/fullcolor/mimetypes/
+    - assets/fullcolor/places/
+    - assets/fullcolor/status/
   fonts:
     - family: AdwaitaIcons
       fonts:

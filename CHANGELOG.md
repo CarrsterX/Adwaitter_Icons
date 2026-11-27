@@ -1,3 +1,9 @@
+## 1.0.0-alpha.11
+
+* Added full `dartdoc` documentation with paginated categories (`Symbolic Icons`, `Full-Color Icons`) and topic pages (`doc/symbolic_icons.md`, `doc/fullcolor_icons.md`), passing `dart doc --validate-links` with 0 warnings and 0 errors.
+* Documented all 71 `AdwFullColorIcons` constants, `AdwFullColorIconData` (with value equality `==`/`hashCode`/`toString`), and `AdwFullColorIcon`.
+* Removed legacy duplicate barrel `lib/libadwaitter_icons.dart` and updated `tool/generate.js` and `README.md`.
+
 ## 1.0.0-alpha.10
 
 * Aligned version with `adwaitter` and `libadwaitter` (`1.0.0-alpha.10`).

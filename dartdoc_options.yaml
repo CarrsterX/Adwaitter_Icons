@@ -1,0 +1,12 @@
+dartdoc:
+  categories:
+    "Symbolic Icons":
+      markdown: doc/symbolic_icons.md
+      name: Symbolic Icons
+    "Full-Color Icons":
+      markdown: doc/fullcolor_icons.md
+      name: Full-Color Icons
+  categoryOrder:
+    - "Symbolic Icons"
+    - "Full-Color Icons"
+  showUndocumentedCategories: true

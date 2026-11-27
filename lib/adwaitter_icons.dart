@@ -2,11 +2,53 @@
 // Based on official GNOME adwaita-icon-theme from GitLab:
 // https://gitlab.gnome.org/GNOME/adwaita-icon-theme
 
+/// Official GNOME Adwaita symbolic and full-color icon theme for Flutter.
+///
+/// This library provides two complementary icon families with zero external
+/// dependencies and full Linux, Android, iOS, macOS, Windows, and Web/WASM
+/// support:
+///
+/// * **Symbolic icons** ([AdwIcons]): 645 monochrome vector glyphs packaged in
+///   the `AdwaitaIcons` TrueType font as standard [IconData] constants.
+/// * **Full-color icons** ([AdwFullColorIcons] & [AdwFullColorIcon]): 71
+///   pre-rendered 128×128 PNG assets covering XDG `devices`, `mimetypes`,
+///   `places`, and `status` icons.
+///
+/// ## Quick Start
+///
+/// ```dart
+/// import 'package:adwaitter_icons/adwaitter_icons.dart';
+/// import 'package:flutter/widgets.dart';
+///
+/// const symbolic = Icon(AdwIcons.folder_symbolic, size: 24);
+/// const fullColor = AdwFullColorIcon(AdwFullColorIcons.folder, size: 48);
+/// ```
+library adwaitter_icons;
+
 import 'package:flutter/widgets.dart';
 
 export 'src/adw_fullcolor_icons.dart';
 
 /// Official GNOME Adwaita symbolic icon suite for Flutter.
+///
+/// Each constant is a standard Flutter [IconData] backed by the `AdwaitaIcons`
+/// TrueType font bundled in `adwaitter_icons`, so it works with [Icon] and any
+/// widget accepting an [IconData] (including `Adwaitter`, `Libadwaitter`,
+/// Material, and Cupertino widgets).
+///
+/// ```dart
+/// const Icon(
+///   AdwIcons.document_save_symbolic,
+///   size: 20,
+/// )
+/// ```
+///
+/// See also:
+///
+/// * [AdwFullColorIcons], for pre-rendered full-color Adwaita icons.
+/// * [AdwFullColorIcon], the widget that renders an [AdwFullColorIconData].
+///
+/// {@category Symbolic Icons}
 abstract final class AdwIcons {
   static const String _fontFamily = 'AdwaitaIcons';
   static const String _fontPackage = 'adwaitter_icons';

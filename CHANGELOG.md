@@ -1,3 +1,7 @@
+## 1.0.0-alpha.12
+
+* Aligned version with `adwaitter` and `libadwaitter` (`1.0.0-alpha.12`).
+
 ## 1.0.0-alpha.11
 
 * Added full `dartdoc` documentation with paginated categories (`Symbolic Icons`, `Full-Color Icons`) and topic pages (`doc/symbolic_icons.md`, `doc/fullcolor_icons.md`), passing `dart doc --validate-links` with 0 warnings and 0 errors.
